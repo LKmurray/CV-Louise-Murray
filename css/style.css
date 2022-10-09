@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&family=Pontano+Sans&family=Poppins:wght@300;400&display=swap");
+body {
+  box-sizing: border-box;
+  font-family: "Pontano Sans", sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #111111;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "logo header header" "main main main" "main main main" "footer footer footer";
+  grid-template-columns: 35vw 45vw 20vw;
+  grid-template-rows: 20vh 50vh 20vh 10vh;
+}
+
+.logo {
+  grid-area: logo;
+  visibility: hidden;
+}
+
+h1 {
+  visibility: hidden;
+}
+h1 img.white {
+  visibility: visible;
+}
+h1 img.yellow {
+  visibility: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+h2 {
+  visibility: hidden;
+}
+h2 .frontend {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 400px) {
+  h1 img.white {
+    visibility: hidden;
+  }
+  h1 img.yellow {
+    visibility: visible;
+  }
+}/*# sourceMappingURL=style.css.map */
