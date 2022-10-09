@@ -1,5 +1,6 @@
 $font-pontano: 'Pontano Sans', sans-serif;
-$text-color: #000000;
+$text-color: white;
+$background-color: #111111;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&family=Pontano+Sans&family=Poppins:wght@300;400&display=swap');
 
@@ -8,52 +9,110 @@ body {
     font-family: $font-pontano;
     line-height: 1.6;
     color: $text-color;
-    background-color: #111111;
+    background-color: $background-color;
 }
 
 .grid {
     display: grid;
     grid-template-areas:
-        "logo header header"
-        "main main main"
-        "main main main"
-        "footer footer footer";
-    grid-template-columns: 35vw 45vw 20vw;
+        "logo header"
+        "main main"
+        "main main"
+        "footer footer";
+    grid-template-columns: 45vw 55vw;
     grid-template-rows: 20vh 50vh 20vh 10vh;
+    margin: 5px;
 }
 
 .logo {
-    grid-area: logo;
-    visibility: hidden;
-}
+    max-width: 100vw;
 
-h1 {
-    visibility: hidden;
+    h1 {
+        visibility: hidden;
+        font-size: 0.01px;
+    }
 
     img {
+
+        margin: 15px 0px 0px 30px;
+
         &.white {
             visibility: visible;
         }
-    }
 
-    img {
         &.yellow {
-            visibility: hidden;
+            display: none;
         }
     }
 }
+
+.test {
+    width: 100vw;
+    height: 40vh;
+}
+
+.extension-text {
+    background-color: $background-color;
+    color: $text-color;
+    cursor: pointer;
+    width: 320px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 10px;
+
+    &:nth-child(n+2) {
+        margin-top: 50px;
+    }
+}
+
+.active,
+.extension-text:hover {
+    background-color: rgb(105, 36, 36);
+}
+
+.content {
+    width: 320px;
+    background-color: rgb(240, 182, 182);
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0px 0px 0px 0px;
+
+    p {
+        font-size: 1em;
+        margin: 10px 0px 10px 7px;
+    }
+}
+
 
 .flex {
     display: flex;
 }
 
+.content {
+    p {
+        width: 310px;
+    }
+}
+
 h2 {
     visibility: hidden;
+    font-size: 0.01px;
+}
 
-    .frontend {
+img {
+    &.frontend-white {
+        max-width: 100vw;
         visibility: visible;
+    }
+
+    &.frontend-yellow {
+        display: none;
     }
 }
 
 
-@import 'mobileless400';
+@import 'mobileless767';

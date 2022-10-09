@@ -1,0 +1,27 @@
+@media only screen and (max-width: 767px) {
+    /* change to min */
+
+    .logo {
+        img {
+            &.white {
+                display: none;
+            }
+
+            &.yellow {
+                display: inline;
+            }
+        }
+    }
+
+    img {
+        &.frontend-white {
+            max-width: 100vw;
+            display: none;
+        }
+
+        &.frontend-yellow {
+            display: inline;
+        }
+    }
+
+}
