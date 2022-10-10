@@ -2,9 +2,9 @@
 body {
   box-sizing: border-box;
   font-family: "Pontano Sans", sans-serif;
-  line-height: 1.6;
   color: white;
   background-color: #111111;
+  margin: 0;
 }
 
 .grid {
@@ -12,7 +12,7 @@ body {
   grid-template-areas: "logo header" "main main" "main main" "footer footer";
   grid-template-columns: 45vw 55vw;
   grid-template-rows: 20vh 50vh 20vh 10vh;
-  margin: 5px;
+  max-width: 1200px;
 }
 
 .logo {
@@ -23,18 +23,14 @@ body {
   font-size: 0.01px;
 }
 .logo img {
-  margin: 15px 0px 0px 30px;
+  padding: 15px 0px 0px 0px;
 }
 .logo img.white {
-  visibility: visible;
+  display: inline;
 }
 .logo img.yellow {
   display: none;
-}
-
-.test {
-  width: 100vw;
-  height: 40vh;
+  max-width: 100vw;
 }
 
 .extension-text {
@@ -84,27 +80,79 @@ h2 {
   font-size: 0.01px;
 }
 
-img.frontend-white {
+.frontend-written img.frontend-white {
   max-width: 100vw;
-  visibility: visible;
+  display: inline;
 }
-img.frontend-yellow {
+.frontend-written img.frontend-yellow {
   display: none;
+  max-width: 100vw;
+}
+
+.picture-louise picture {
+  max-width: 100vw;
+}
+.picture-louise picture.yellow {
+  display: none;
+  width: 100vw;
+}
+.picture-louise picture.white {
+  display: inline;
+  width: 50vw;
+}
+.picture-louise picture img {
+  max-width: 100vw;
+}
+
+footer {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(255, 127, 219);
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 @media only screen and (max-width: 767px) {
   /* change to min */
+  body {
+    margin: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "logo logo" "main main" "main main" "footer footer";
+    grid-template-columns: 45vw 55vw;
+    grid-template-rows: 20vh 50vh 20vh 10vh;
+    max-width: 1200px;
+  }
+  .logo {
+    grid-area: logo;
+  }
   .logo img.white {
     display: none;
   }
   .logo img.yellow {
     display: inline;
+    max-width: 100vw;
   }
-  img.frontend-white {
+  .picture-louise picture {
+    overflow: hidden;
+  }
+  .picture-louise picture.yellow {
+    max-width: 100vw;
+  }
+  footer {
+    grid-area: footer;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(255, 127, 189);
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .frontend-written img.frontend-white {
     max-width: 100vw;
     display: none;
   }
-  img.frontend-yellow {
+  .frontend-written img.frontend-yellow {
     display: inline;
   }
 }/*# sourceMappingURL=style.css.map */

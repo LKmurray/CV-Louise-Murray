@@ -4,12 +4,13 @@ $background-color: #111111;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&family=Pontano+Sans&family=Poppins:wght@300;400&display=swap');
 
+
 body {
     box-sizing: border-box;
     font-family: $font-pontano;
-    line-height: 1.6;
     color: $text-color;
     background-color: $background-color;
+    margin: 0;
 }
 
 .grid {
@@ -21,7 +22,7 @@ body {
         "footer footer";
     grid-template-columns: 45vw 55vw;
     grid-template-rows: 20vh 50vh 20vh 10vh;
-    margin: 5px;
+    max-width: 1200px;
 }
 
 .logo {
@@ -34,21 +35,17 @@ body {
 
     img {
 
-        margin: 15px 0px 0px 30px;
+        padding: 15px 0px 0px 0px;
 
         &.white {
-            visibility: visible;
+            display: inline;
         }
 
         &.yellow {
             display: none;
+            max-width: 100vw;
         }
     }
-}
-
-.test {
-    width: 100vw;
-    height: 40vh;
 }
 
 .extension-text {
@@ -103,16 +100,43 @@ h2 {
     font-size: 0.01px;
 }
 
-img {
+.frontend-written img {
     &.frontend-white {
         max-width: 100vw;
-        visibility: visible;
+        display: inline;
     }
 
     &.frontend-yellow {
         display: none;
+        max-width: 100vw;
     }
 }
+
+.picture-louise picture {
+    max-width: 100vw;
+
+    &.yellow {
+        display: none;
+        width: 100vw;
+    }
+
+    &.white {
+        display: inline;
+        width: 50vw;
+    }
+
+    img {
+        max-width: 100vw;
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(255, 127, 219);
+    position: sticky;
+}
+
 
 
 @import 'mobileless767';

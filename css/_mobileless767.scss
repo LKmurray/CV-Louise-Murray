@@ -1,7 +1,25 @@
 @media only screen and (max-width: 767px) {
     /* change to min */
 
+    body {
+        margin: 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "main main"
+            "main main"
+            "footer footer";
+        grid-template-columns: 45vw 55vw;
+        grid-template-rows: 20vh 50vh 20vh 10vh;
+        max-width: 1200px;
+    }
+
     .logo {
+        grid-area: logo;
+
         img {
             &.white {
                 display: none;
@@ -9,11 +27,28 @@
 
             &.yellow {
                 display: inline;
+                max-width: 100vw;
             }
         }
     }
 
-    img {
+    .picture-louise picture {
+        overflow: hidden;
+
+        &.yellow {
+            max-width: 100vw;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 70px;
+        background-color: rgb(255, 127, 189);
+        position: sticky;
+    }
+
+    .frontend-written img {
         &.frontend-white {
             max-width: 100vw;
             display: none;
