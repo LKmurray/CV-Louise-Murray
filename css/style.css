@@ -9,14 +9,14 @@ body {
 
 .grid {
   display: grid;
-  grid-template-areas: "logo header" "main main" "main main" "footer footer";
+  grid-template-areas: "logo logo" "main main" "frontendwritten main" "footer footer";
   grid-template-columns: 45vw 55vw;
-  grid-template-rows: 20vh 50vh 20vh 10vh;
+  grid-template-rows: 20vh 80vh 80vh 20vh;
   max-width: 1200px;
 }
 
 .logo {
-  max-width: 100vw;
+  grid-area: logo;
 }
 .logo h1 {
   visibility: hidden;
@@ -33,7 +33,26 @@ body {
   max-width: 100vw;
 }
 
-.extension-text {
+.picture-louise.picture {
+  max-width: 100vw;
+}
+.picture-louise.picture.yellow {
+  display: none;
+  width: 100vw;
+}
+.picture-louise.picture.white {
+  display: inline;
+  width: 50vw;
+}
+.picture-louise .img {
+  max-width: 100vw;
+  max-height: 80vh;
+}
+
+.info-text {
+  grid-area: info-text;
+}
+.info-text .extension-text {
   background-color: #111111;
   color: white;
   cursor: pointer;
@@ -45,7 +64,7 @@ body {
   padding: 5px 0px 5px 5px;
   margin-bottom: 10px;
 }
-.extension-text:nth-child(n+2) {
+.info-text .extension-text:nth-child(n+2) {
   margin-top: 50px;
 }
 
@@ -80,6 +99,9 @@ h2 {
   font-size: 0.01px;
 }
 
+.frontend-written {
+  grid-area: frontendwritten;
+}
 .frontend-written img.frontend-white {
   max-width: 100vw;
   display: inline;
@@ -89,40 +111,16 @@ h2 {
   max-width: 100vw;
 }
 
-.picture-louise picture {
-  max-width: 100vw;
-}
-.picture-louise picture.yellow {
-  display: none;
-  width: 100vw;
-}
-.picture-louise picture.white {
-  display: inline;
-  width: 50vw;
-}
-.picture-louise picture img {
-  max-width: 100vw;
-}
-
 footer {
   width: 100vw;
-  height: 50px;
-  background-color: rgb(255, 127, 219);
-  position: -webkit-sticky;
-  position: sticky;
+  height: 100px;
+  background-color: rgb(255, 127, 189);
 }
 
 @media only screen and (max-width: 767px) {
   /* change to min */
   body {
     margin: 0;
-  }
-  .grid {
-    display: grid;
-    grid-template-areas: "logo logo" "main main" "main main" "footer footer";
-    grid-template-columns: 45vw 55vw;
-    grid-template-rows: 20vh 50vh 20vh 10vh;
-    max-width: 1200px;
   }
   .logo {
     grid-area: logo;
@@ -142,11 +140,6 @@ footer {
   }
   footer {
     grid-area: footer;
-    width: 100vw;
-    height: 70px;
-    background-color: rgb(255, 127, 189);
-    position: -webkit-sticky;
-    position: sticky;
   }
   .frontend-written img.frontend-white {
     max-width: 100vw;

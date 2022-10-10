@@ -5,17 +5,6 @@
         margin: 0;
     }
 
-    .grid {
-        display: grid;
-        grid-template-areas:
-            "logo logo"
-            "main main"
-            "main main"
-            "footer footer";
-        grid-template-columns: 45vw 55vw;
-        grid-template-rows: 20vh 50vh 20vh 10vh;
-        max-width: 1200px;
-    }
 
     .logo {
         grid-area: logo;
@@ -32,6 +21,7 @@
         }
     }
 
+
     .picture-louise picture {
         overflow: hidden;
 
@@ -40,15 +30,14 @@
         }
     }
 
+
     footer {
         grid-area: footer;
-        width: 100vw;
-        height: 70px;
-        background-color: rgb(255, 127, 189);
-        position: sticky;
     }
 
+
     .frontend-written img {
+
         &.frontend-white {
             max-width: 100vw;
             display: none;
