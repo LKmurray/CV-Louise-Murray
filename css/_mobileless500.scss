@@ -1,0 +1,23 @@
+@media only screen and (max-width: 500px) {
+
+
+
+    .info-text {
+        margin-left: 0;
+
+        & .content p {
+            letter-spacing: 0.06em;
+            line-height: 1.7em;
+            font-size: 1em;
+        }
+
+        button.extension-text {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        height: 45px;
+    }
+}

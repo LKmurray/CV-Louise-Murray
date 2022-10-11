@@ -1,51 +1,117 @@
 @media only screen and (max-width: 767px) {
     /* change to min */
 
+
     body {
         margin: 0;
     }
 
 
     .logo {
-        grid-area: logo;
+        order: 1;
 
         img {
             &.white {
+                width: 60%;
+                z-index: 1;
+                height: auto;
+                position: absolute;
+                margin: 10px 0px 0px 15px;
+            }
+
+        }
+    }
+
+
+    .picture-louise {
+        display: flex;
+        order: 2;
+        z-index: -1;
+        height: fit-content;
+        margin-top: 10%;
+
+        picture {
+
+            & .picture-img {
+                border-bottom: 2px solid $text-color;
+            }
+
+            & .mobile-pic {
+                width: 100vw;
+            }
+
+            & .white {
                 display: none;
             }
 
-            &.yellow {
-                display: inline;
-                max-width: 100vw;
+            img {
+                width: 100vw;
             }
         }
     }
 
 
-    .picture-louise picture {
-        overflow: hidden;
 
-        &.yellow {
-            max-width: 100vw;
+    .frontend-written {
+        order: 3;
+
+        img {
+
+            &.frontend-white {
+                width: 80vw;
+                padding: 5% 0% 0% 5%;
+            }
         }
     }
 
 
-    footer {
-        grid-area: footer;
+    .info-text {
+        order: 5;
+
+        button.extension-text {
+            font-weight: 500;
+            font-size: 21px;
+            padding-left: 0%;
+            padding-bottom: 2%;
+            display: block;
+            height: auto;
+        }
+
+        button.extension-text:hover {
+            background-image: url("/img/line-w152.png");
+            background-position: left bottom;
+            height: auto;
+            background-repeat: no-repeat;
+        }
+
+        button.extension-text.active {
+            background-image: url("/img/line-w152.png");
+            background-position: left bottom;
+            height: auto;
+            background-repeat: no-repeat;
+
+            & :after {
+                content: "\2796";
+                font-size: 12px;
+                float: right;
+            }
+        }
+
+
+        & .content {
+            margin-left: 20px;
+            width: 90vw;
+
+            p {
+                letter-spacing: 0.08em;
+                line-height: 1.7em;
+                font-size: 1.2em;
+            }
+        }
     }
 
-
-    .frontend-written img {
-
-        &.frontend-white {
-            max-width: 100vw;
-            display: none;
-        }
-
-        &.frontend-yellow {
-            display: inline;
-        }
+    .flex {
+        order: 6;
     }
 
 }
