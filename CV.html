@@ -14,17 +14,16 @@
         <div class="wrapper">
             <div class="logo">
                 <h1>Louise Murray</h1>
-                <img class="yellow" src="img/logo-louise-yellow.png" alt="yellow logo">
                 <img class="white" src="img/logo-louise-white.png" alt="white logo">
             </div>
             <div class="picture-louise">
-                <picture>
-                    <source class="mobile-pic" media="(max-width: 767px)" srcset="img/no-tie-mobile.png"
-                        alt="Louise drawn cartoon like" />
-                    <source class="white" media="(min-width: 768px)" srcset="img/no-tie-louise.png"
-                        alt="Louise drawn cartoon like" />
-                    <img class="picture-img" src="img/no-tie-louise.png" alt="Louise drawn cartoon like" />
-                </picture>
+                <img srcset="img/no-tie-mobile.png 767w, img/no-tie-louise 690w" sizes="(max-width: 767px) 767px, 690px"
+                    src="img/no-tie-mobile.png" alt="cartoon like drawing of a girll" />
+                <!-- <source class="mobile-pic" media="(max-width: 767px)" srcset="img/no-tie-mobile.png"
+                    alt="Louise drawn cartoon like" />
+                <source class="white" media="(min-width: 768px)" srcset="img/no-tie-louise.png"
+                    alt="Louise drawn cartoon like" />
+                <img class="picture-img" src="img/no-tie-louise.png" alt="Louise drawn cartoon like" /> -->
             </div>
             <div class="info-text">
                 <button type="button" class="extension-text">let me be an asset</button>

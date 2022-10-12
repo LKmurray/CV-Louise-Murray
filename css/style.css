@@ -27,41 +27,26 @@ main {
   font-size: 0.01px;
 }
 .logo img {
-  padding: 15px 0px 0px 0px;
+  padding: 24px 0px 0px 25px;
 }
 .logo img.white {
   display: inline;
 }
-.logo img.yellow {
-  display: none;
-}
 
-.picture-louise {
-  max-width: 100vw;
-}
-.picture-louise picture {
-  max-width: 100vw;
-}
-.picture-louise picture .yellow {
-  display: none;
-}
-.picture-louise picture .white {
-  display: inline;
+.picture-louise img {
+  float: right;
   width: 50vw;
-}
-.picture-louise picture img {
-  width: 100vw;
 }
 
 .info-text {
-  max-width: 100vw;
+  order: 1;
   margin: 0% 3% 10% 2%;
 }
 .info-text .extension-text {
   background-color: #111111;
   color: #CAD5E5;
   cursor: pointer;
-  width: 80vw;
+  width: 40vw;
   border: none;
   text-align: left;
   outline: none;
@@ -106,19 +91,25 @@ h2 {
   font-size: 0.01px;
 }
 
+.frontend-written {
+  order: 2;
+  width: 40vw;
+}
 .frontend-written img.frontend-white {
   max-width: 100vw;
   display: inline;
 }
 
 .flex {
+  order: 3;
   margin-bottom: 20px;
 }
 .flex .portfolio-written {
   width: 40%;
   position: relative;
-  top: 85px;
+  top: 110px;
   z-index: 1;
+  margin-left: 5px;
 }
 .flex .frame {
   margin: 0% 5% 2.5% 5%;
@@ -158,13 +149,21 @@ h2 {
   width: auto;
   margin-top: -22px;
   padding: 20px;
-  color: #CAD5E5;
+  color: rgba(255, 255, 255, 0.65);
   font-size: 20px;
   transition: 0.5s ease;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.flex .slideshow-container .next:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+.flex .slideshow-container .prev:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
 }
 .flex .slideshow-container .next {
   right: -7%;
@@ -184,7 +183,8 @@ h2 {
 }
 .flex .active,
 .flex .dot:hover {
-  background-color: #717171;
+  background-color: #CAD5E5;
+  transition: 0.5s ease-out;
 }
 
 footer {
@@ -223,29 +223,20 @@ footer img {
     z-index: 1;
     height: auto;
     position: absolute;
-    margin: 10px 0px 0px 15px;
+    top: 0;
+    margin: 5px 0px 0px 10px;
   }
-  .picture-louise {
+  .picture-louise img {
     display: flex;
     order: 2;
     z-index: -1;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: 100vw;
     margin-top: 10%;
-  }
-  .picture-louise picture .picture-img {
     border-bottom: 2px solid #CAD5E5;
     border-radius: 0.7%;
-  }
-  .picture-louise picture .mobile-pic {
-    width: 100vw;
-  }
-  .picture-louise picture .white {
-    display: none;
-  }
-  .picture-louise picture img {
-    width: 100vw;
   }
   .frontend-written {
     order: 3;
