@@ -17,7 +17,28 @@
         }
     }
 
+    .flex {
+        .slideshow-container {
+            .next {
+                right: -10%;
+            }
+
+            .prev {
+                left: -10%;
+
+            }
+        }
+    }
+
     footer {
         height: 45px;
     }
+}
+
+.next {
+    right: -20%;
+}
+
+.prev {
+    left: -20%;
 }

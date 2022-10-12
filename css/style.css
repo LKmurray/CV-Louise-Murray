@@ -55,7 +55,7 @@ main {
 
 .info-text {
   max-width: 100vw;
-  margin: 0% 3% 20% 2%;
+  margin: 0% 3% 10% 2%;
 }
 .info-text .extension-text {
   background-color: #111111;
@@ -101,10 +101,6 @@ main {
   margin: 10px 7px 10px 7px;
 }
 
-.flex {
-  display: flex;
-}
-
 h2 {
   visibility: hidden;
   font-size: 0.01px;
@@ -115,7 +111,86 @@ h2 {
   display: inline;
 }
 
+.flex {
+  margin-bottom: 20px;
+}
+.flex .portfolio-written {
+  width: 40%;
+  position: relative;
+  top: 85px;
+  z-index: 1;
+}
+.flex .frame {
+  margin: 0% 5% 2.5% 5%;
+  background-color: #212121;
+  border-bottom: #CAD5E5 2px solid;
+  overflow: hidden;
+  border-radius: 1%;
+}
+.flex .slideshow-container {
+  width: 80vw;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+.flex .slideshow-container img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 75vh;
+  padding-top: 5%;
+}
+.flex .slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 13px;
+  font-family: "Pontano Sans", sans-serif;
+  padding-bottom: 7px;
+  margin-right: 0;
+  text-align: center;
+}
+.flex .slideshow-container .slide-portfolio {
+  display: none;
+}
+.flex .slideshow-container .prev,
+.flex .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: #CAD5E5;
+  font-size: 20px;
+  transition: 0.5s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.flex .slideshow-container .next {
+  right: -7%;
+}
+.flex .slideshow-container .prev {
+  left: -7%;
+}
+.flex .dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px 2px 5px 2px;
+  background-color: rgb(106, 105, 105);
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.flex .active,
+.flex .dot:hover {
+  background-color: #717171;
+}
+
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-image: url("/img/vojtech-bruzek-zMl9PjGFPWg-unsplash-1.png");
   width: 100vw;
   height: 7vh;
@@ -123,6 +198,16 @@ footer {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  z-index: 2;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(6, 3, 3, 0.708);
+  border-radius: 50%;
+  border: 1px white solid;
+  margin-right: 10px;
+  margin-top: 4px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -151,6 +236,7 @@ footer {
   }
   .picture-louise picture .picture-img {
     border-bottom: 2px solid #CAD5E5;
+    border-radius: 0.7%;
   }
   .picture-louise picture .mobile-pic {
     width: 100vw;
@@ -203,7 +289,7 @@ footer {
   .info-text .content p {
     letter-spacing: 0.08em;
     line-height: 1.7em;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .flex {
     order: 6;
@@ -222,7 +308,20 @@ footer {
     font-weight: 500;
     font-size: 18px;
   }
+  .flex .slideshow-container .next {
+    right: -10%;
+  }
+  .flex .slideshow-container .prev {
+    left: -10%;
+  }
   footer {
     height: 45px;
   }
+}
+.next {
+  right: -20%;
+}
+
+.prev {
+  left: -20%;
 }/*# sourceMappingURL=style.css.map */
