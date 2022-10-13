@@ -6,6 +6,12 @@
         margin: 0;
     }
 
+    .wrapper {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .logo {
         order: 1;
@@ -14,10 +20,9 @@
             &.white {
                 width: 60%;
                 z-index: 1;
-                height: auto;
                 position: absolute;
                 top: 0;
-                margin: 5px 0px 0px 10px;
+                margin: 3px 0px 0px 10px;
             }
 
         }
@@ -27,6 +32,7 @@
     .picture-louise {
 
         img {
+            position: static;
             display: flex;
             order: 2;
             z-index: -1;
@@ -35,77 +41,63 @@
             margin-top: 10%;
             border-bottom: 2px solid $text-color;
             border-radius: 0.7%;
+            border-left: 0;
         }
-
-        // picture {
-
-        //     & .picture-img {
-        //         border-bottom: 2px solid $text-color;
-        //         border-radius: 0.7%;
-        //     }
-
-        //     & .mobile-pic {
-        //         width: 100vw;
-        //     }
-
-        //     & .white {
-        //         display: none;
-        //     }
-
-        //     img {
-        //         width: 100vw;
-        //     }
-        // }
     }
 
 
 
     .frontend-written {
         order: 3;
+        margin-left: 15px;
+        position: static;
+        max-width: 90vw;
 
         img.frontend-white {
-            width: 80vw;
-            padding: 5% 0% 0% 5%;
+            width: 85vw;
+            padding: 40px 0% 0% 5%;
+            float: none;
+            margin-bottom: 20px;
         }
     }
 
 
     .info-text {
         order: 5;
+        width: fit-content;
+        margin-bottom: 0;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        align-self: center;
 
         button.extension-text {
-            font-weight: 500;
+            font-weight: 300;
             font-size: 21px;
             padding-left: 0%;
             padding-bottom: 2%;
             display: block;
             height: auto;
-        }
+            width: 85vw;
+            margin-right: 20px;
+            margin-left: 20px;
 
-        button.extension-text:hover {
-            background-image: url("/img/line-w152.png");
-            background-position: left bottom;
-            height: auto;
-            background-repeat: no-repeat;
-        }
+            &:first-child {
+                margin-top: 10px;
+            }
 
-        button.extension-text.active {
-            background-image: url("/img/line-w152.png");
-            background-position: left bottom;
-            height: auto;
-            background-repeat: no-repeat;
+            &:nth-child(n+2) {
+                margin-top: 50px;
+            }
 
-            & :after {
-                content: "\2796";
-                font-size: 12px;
-                float: right;
+            &:last-child {
+                margin-bottom: 10%;
             }
         }
 
 
         & .content {
-            margin-left: 20px;
-            width: 90vw;
+            width: 85vw;
 
             p {
                 letter-spacing: 0.08em;
@@ -117,6 +109,24 @@
 
     .flex {
         order: 6;
+        margin-top: 0;
+
+        .portfolio-written {
+            width: 40%;
+            top: 110px;
+            margin-left: 5px;
+        }
     }
 
+
+    footer {
+        height: 7vh;
+
+        img {
+            width: 35px;
+            height: 35px;
+            margin-right: 15px;
+            margin-top: 4px;
+        }
+    }
 }
