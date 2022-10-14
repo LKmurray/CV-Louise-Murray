@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Louise Murray Frontend Developer</title>
     <meta name="description"
         content="Learn more about me, Louise Murray, a Front End Developer in the making. Soon to have skills in JavaScript, Frontend Developing and a lot more! 
-        Keep looking to se what I have done so far and what my skills are. I am soon looking for an internship and will be availible full time." />
+        Keep looking to see what I have done so far and what my skills are. I am soon looking for an internship and will be availible full time.">
 </head>
 
 <body>
@@ -17,19 +17,24 @@
         <div class="wrapper">
             <div class="logo">
                 <h1>Louise Murray</h1>
-                <img class="white" src="img/logo-louise-white.png" alt="white logo">
+                <img class="white" src="img/logo-louise-big.png" srcset="img/logo-louise-small.png 1x,
+                 img/logo-louise-big.png 2x" alt="white logo Louise Murray">
             </div>
-            <!-- <div class="desktop"> -->
             <div class="picture-louise">
-                <img srcset="img/no-tie-mobile.png 767w, img/no-tie-louise 690w" sizes="(max-width: 767px) 767px, 690px"
-                    src="img/no-tie-mobile.png" alt="cartoon like drawing of a girl" />
+                <img srcset="img/no-tie-mobile.png 767w,
+                 img/no-tie-louise 690w" sizes="(max-width: 767px) 767px, 690px" src="img/no-tie-mobile.png"
+                    alt="cartoon like drawing of a girl">
             </div>
             <div class="info-text">
                 <button type="button" class="extension-text">let me be an asset</button>
                 <div class="content">
                     <p>i want to join a team and a workplace where i&lsquo;m not only filling a position.
                         i want to chanel the passion i have for front end developing along with my creativity into the
-                        work that i&lsquo;m doing.
+                        work that i&lsquo;m doing. so far i&lsquo;ve discovered that my greatest skills is within the
+                        details. i want to learn
+                        as much as possible in order to do the best job i could possible do and i won&lsquo;t settle
+                        until
+                        i&lsquo;ve done so.
                         by letting me join you and believing in me, i know that the return will be greater than the
                         investment.</p>
                 </div>
@@ -37,7 +42,17 @@
                 <div class="content">
                     <p>i&lsquo;ve previously worked mainly within the hospitality industry, but i&lsquo;ve also
                         had the privilige to work creatively. i&lsquo;ve been part of arranging a music festival
-                        and toured sweden with different art pop ups of different sorts.
+                        and toured sweden with different art pop ups of different sorts. but now now happily
+                        shifting into tech!<br>
+                        i&lsquo;ve got tech skills such as;</p>
+                    <ul>
+                        <li>front end developing</li>
+                        <li>designing web pages</li>
+                        <!--LOL svårt att tro med tanke på denna sida-->
+                        <li>java script</li>
+                        <li>SEO optimizing</li>
+                    </ul>
+                    <p>
                         being new to front end developing leaves me with the pleasure of having a lot of
                         fun things ahead of me yet to be discovered. although i&lsquo;ve already created a few projects.
                         follow the link below to check out a few of them.<br>
@@ -46,10 +61,11 @@
                 </div>
                 <button type="button" class="extension-text">but also - what do i want</button>
                 <div class="content">
-                    <p>so far i&lsquo;ve discovered that my greatest skills is within the details. i want to learn
-                        as much as possible in order to do the best job i could possible do and i won&lsquo;t settle
-                        until
-                        i&lsquo;ve done so. </p>
+                    <p>first off i want to graduate medieinstitutet with the most amount of skills i
+                        could possibly get. during this time i want to execute an internship at an
+                        office that is ready to let me grow. further on i&lsquo;d like to build a
+                        career in front end developing and connect with others in the same industry.
+                    </p>
                 </div>
                 <button type="button" class="extension-text">contact me</button>
                 <div class="content">
@@ -57,15 +73,16 @@
                         <ul>
                             <li>
                                 <label for="name">name:</label><br>
-                                <input type="text" id="name" name="user_name" />
+                                <input type="text" id="name" name="user_name">
                             </li>
                             <li>
                                 <label for="mail">e-mail:</label><br>
-                                <input type="email" id="mail" name="user_email" />
+                                <input type="email" id="mail" name="user_email">
                             </li>
                             <li>
                                 <label for="msg">message:</label><br>
-                                <textarea id="msg" name="user_message" placeholder="write me a message"></textarea>
+                                <textarea id="msg" name="user_message" aria-label="write me a message"
+                                    placeholder="write me a message"></textarea>
                             </li>
                             <li class="button"><br>
                                 <button type="submit">send message</button>
@@ -76,7 +93,8 @@
             </div>
             <h2>Front end developer</h2>
             <div class="frontend-written">
-                <img class="frontend-white" src="img/frontend-written.png" alt="front end drawn">
+                <img class="frontend-white" src="img/frontend-big.png" srcset="img/frontend-small.png 1x,
+                 img/frontend-big.png 2x" alt="Frontend written in white">
             </div>
             <div class="flex">
                 <h2>Portfolio</h2>
@@ -85,15 +103,18 @@
                 <div class="frame">
                     <div class="slideshow-container">
                         <div class="slide-portfolio">
-                            <img src="img/barbershop-landscape.png" style="width:100%">
+                            <img src="img/barbershop-landscape.png"
+                                alt="Website start page for a Barbershop Desktop view" style="width:100%">
                             <div class="text">fake client for a school project</div>
                         </div>
                         <div class="slide-portfolio">
-                            <img src="img/barbershop-services.png" style="width:100%">
+                            <img src="img/barbershop-services.png"
+                                alt="Website service page for a Barbershop Desktop view" style="width:100%">
                             <div class="text">fake client for a school project</div>
                         </div>
                         <div class="slide-portfolio">
-                            <img src="img/barbershop-mobile.png" style="width:100%">
+                            <img src="img/barbershop-mobile.png" alt="Website for a Barbershop mobile view"
+                                style="width:100%">
                             <div class="text">fake client for a school project</div>
                         </div>
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

@@ -151,6 +151,11 @@ main {
 .info-text .content p a:visited {
   color: rgb(106, 105, 105);
 }
+.info-text .content ul li {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 1.1em;
+  margin-top: 2px;
+}
 
 h2 {
   visibility: hidden;
