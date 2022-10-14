@@ -1,7 +1,4 @@
-$font-pontano: 'Pontano Sans', sans-serif;
-$text-color: #CAD5E5;
-$background-color: #111111;
-
+@import'characteristics';
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&family=Pontano+Sans&family=Poppins:wght@300;400&display=swap');
 
 
@@ -80,7 +77,7 @@ main {
         border: none;
         text-align: left;
         outline: none;
-        font-size: 1.4em;
+        font-size: 1.3em;
         margin: 0px 0px 10px 20px;
         padding: 5px 0px 5px 5px;
 
@@ -89,7 +86,7 @@ main {
         }
 
         &:nth-child(n+2) {
-            margin-top: 50px;
+            margin-top: 70px;
         }
 
         &:last-child {
@@ -151,12 +148,8 @@ main {
                 li {
                     margin-top: 10px;
 
-                    button {
-                        margin-top: 0;
-                    }
-
-                    label {
-                        width: 80px;
+                    textarea {
+                        height: 80px;
                     }
 
                     input,
@@ -209,11 +202,10 @@ h2 {
 
 }
 
-
 .flex {
     order: 3;
     margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 10px;
 
     .portfolio-written {
         width: 20%;

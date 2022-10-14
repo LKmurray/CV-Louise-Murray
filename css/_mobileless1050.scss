@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1050px) {
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
 
     .picture-louise {
         img {
@@ -8,7 +8,20 @@
 
 
     .info-text {
-        margin-top: 8px;
+        margin-top: 30px;
+
+        button.extension-text {
+            font-size: 1.3em;
+
+
+            &:nth-child(n+2) {
+                margin-top: 30px;
+
+            }
+        }
     }
 
+    .flex {
+        margin-top: 0px;
+    }
 }

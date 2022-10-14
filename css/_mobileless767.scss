@@ -65,20 +65,17 @@
     .info-text {
         order: 5;
         width: fit-content;
-        margin-bottom: 0;
-        margin-top: 50px;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 45px 0 0 0;
         align-self: center;
 
         button.extension-text {
             font-weight: 300;
-            font-size: 21px;
+            font-size: 18px;
             padding-left: 0%;
             padding-bottom: 2%;
             display: block;
             height: auto;
-            width: 85vw;
+            width: 75vw;
             margin-right: 20px;
             margin-left: 20px;
 
@@ -87,7 +84,7 @@
             }
 
             &:nth-child(n+2) {
-                margin-top: 50px;
+                margin-top: 40px;
             }
 
             &:last-child {
@@ -109,7 +106,7 @@
 
     .flex {
         order: 6;
-        margin-top: 0;
+        margin-top: 0px;
 
         .portfolio-written {
             width: 40%;

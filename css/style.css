@@ -66,7 +66,7 @@ main {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin: 0px 0px 10px 20px;
   padding: 5px 0px 5px 5px;
 }
@@ -74,7 +74,7 @@ main {
   margin-top: 10px;
 }
 .info-text .extension-text:nth-child(n+2) {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .info-text .extension-text:last-child {
   margin-bottom: 30%;
@@ -127,11 +127,8 @@ main {
 .info-text .content form ul li {
   margin-top: 10px;
 }
-.info-text .content form ul li button {
-  margin-top: 0;
-}
-.info-text .content form ul li label {
-  width: 80px;
+.info-text .content form ul li textarea {
+  height: 80px;
 }
 .info-text .content form ul li input,
 .info-text .content form ul li textarea {
@@ -175,7 +172,7 @@ h2 {
 .flex {
   order: 3;
   margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 .flex .portfolio-written {
   width: 20%;
@@ -334,20 +331,17 @@ footer img {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin-bottom: 0;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 45px 0 0 0;
     align-self: center;
   }
   .info-text button.extension-text {
     font-weight: 300;
-    font-size: 21px;
+    font-size: 18px;
     padding-left: 0%;
     padding-bottom: 2%;
     display: block;
     height: auto;
-    width: 85vw;
+    width: 75vw;
     margin-right: 20px;
     margin-left: 20px;
   }
@@ -355,7 +349,7 @@ footer img {
     margin-top: 10px;
   }
   .info-text button.extension-text:nth-child(n+2) {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .info-text button.extension-text:last-child {
     margin-bottom: 10%;
@@ -370,7 +364,7 @@ footer img {
   }
   .flex {
     order: 6;
-    margin-top: 0;
+    margin-top: 0px;
   }
   .flex .portfolio-written {
     width: 40%;
@@ -418,11 +412,20 @@ footer img {
   left: -20%;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
   .picture-louise img {
     top: 75px;
   }
   .info-text {
-    margin-top: 8px;
+    margin-top: 30px;
+  }
+  .info-text button.extension-text {
+    font-size: 1.3em;
+  }
+  .info-text button.extension-text:nth-child(n+2) {
+    margin-top: 30px;
+  }
+  .flex {
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
